@@ -1,0 +1,63 @@
+  html,
+    .body {
+      position: relative;
+      height: 100vh;
+    }
+
+    .body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+     
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat; 
+      background-position: center; 
+      background-size: cover;
+    }
+     swiper-slide > div{
+        background-color: rgba(0, 0, 0, 0.362); 
+        height: 100%;
+         width: 100%;
+          display: flex; 
+          align-items: center; 
+          justify-content: center;
+          padding: 1rem;
+     }
+.bannertext {
+color:#fff;
+}
+.firstmainheading{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 18px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    color: rgb(252, 176, 63);
+}
+.bannertext h1{
+    font-size: 76px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.bannertext h1 span{
+    color:rgb(252, 176, 63);
+}
+
+  @media (max-width:768px) {
+    .bannertext h1{
+    font-size: 40px;
+}
+  }

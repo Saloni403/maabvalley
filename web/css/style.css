@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+
+}
+ul{
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+li{
+    list-style: none;
+
+}
+
+.secondmainheading{
+font-size: 3rem;
+font-weight: bold;
+margin: 1rem 0;
+}
+@media (max-width:768px) {
+    .secondmainheading{
+font-size: 2rem;
+}
+}
+.greytext{
+    color: #666666;
+}
+.buttondesign{
+    color: rgb(227, 227, 227) !important;
+    background-color: rgb(131, 192, 66);
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden !important;
+    transition: 1s ease-in-out;
+    /* z-index: -1; */
+    clip-path: inset(0 round 30px);
+}
+.buttondesign span{
+    position: relative;
+    z-index: 2;
+}
+.buttondesign::before{
+    content: "";
+    position: absolute;
+    height:50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(16, 117, 60);
+    border-radius: 30px 30px 0 0;
+    transition: 0.3s;
+     z-index: 1;
+}
+.buttondesign::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(16, 117, 60);
+    border-radius: 0 0 30px 30px;
+    transition: 0.3s;
+     z-index: 1;
+}
+.buttondesign:hover::after,.buttondesign:hover::before{
+  height:0;
+}
+
+/* menu */
+.menu{
+    width: 280px;
+    height: 100vh;
+  padding: 1rem 0;  
+    line-height: 1.8;
+    position: fixed;
+    left: -350px;
+    top: 0;
+    z-index:99;
+background-color: #fffbe8;
+transition: 0.3s;
+overflow-y: scroll;
+border-right: 2px solid rgb(252, 176, 63);
+}
+.menu.open{
+    left: 0;
+}
+.menu li{
+    padding: 0.5rem 1rem;
+border-bottom: 2px solid lightgrey;
+transition: 0.3s;
+}
+.menu li:hover{
+    background-color: rgb(252, 176, 63);
+}
+.menu a{
+    color: #000;
+    transition: 0.3s;
+}
+.menu li:hover a{
+color: #fff;
+}
+.menuicons {
+  perspective: 600px; /* gives depth for 3D effect */
+}
+.menuicons i{
+margin-right: 1rem;
+background-color: rgb(252, 176, 63);
+padding:0.7rem 1rem;
+color: #fff;
+border-radius: 50%;
+transition: transform 0.8s ease-in-out; /* smoother and visible */
+  transform-style: preserve-3d;
+  display: inline-block;
+}
+
+.menuicons i:hover {
+  transform: rotateY(360deg); /* full visible spin */
+  background-color: rgb(252, 176, 63);
+
+}
+.menuinfo:hover a , .menuinfo:hover i {
+color: rgb(252, 176, 63) !important;
+}
+
+/* top nav */
+.topnav {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0 3rem 0;
+}
+.topnav a{
+color: #fff;
+}
+
+/* header */
+header{
+width: 100%;
+left: 50%;
+   transform: translate(-50%, -2rem);
+   position: absolute;
+   z-index: 2;
+   
+}
+header.sticky{
+    position: sticky;
+    top:1rem;
+   left: 0;
+   transform: none;
+   
+}
+@media (max-width:576px) {
+    header.sticky{
+   top: 0;
+}
+}
+header .container{
+    background-color: #fffbe8;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.topnavicons i{
+    margin-left: 1rem;
+}
+.dropdownn{
+    position: relative;
+ 
+}
+.dropdownn::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 15px; /* height of invisible hover area (gap space) */
+  background: transparent;
+}
+.dropdownn ul li{
+    margin-left: 0;
+}
+.sublist{
+    position: absolute;
+opacity: 0;
+visibility: hidden;
+left: -1rem;
+transform: translateY(50%);
+z-index: -1;
+    background-color: #fff;
+    transition: 0.3s;
+    width: 200px;
+    border: 2px solid whitesmoke;
+    box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.379);
+
+}
+.sublist li{
+    border-bottom: 2px solid lightgrey;
+    padding: 0.65rem;
+}
+.dropdownn:hover .sublist{
+opacity: 1;
+visibility: visible;
+transform: translateY(15px);
+z-index: 2;
+}
+.sublist li:hover{
+background-color: rgb(252, 176, 63);
+}
+.sublist li:hover a{
+color: #fff !important;
+}
+@media (max-width:992px) {
+header{
+   transform: translate(-50%, 1rem);
+}
+}
+@media (max-width:768px) {
+    .topnavicons i{
+    margin-left: 0;
+    margin-right: 1rem;
+}
+}
+
+@media (max-width:576px) {
+header{
+   position: relative;
+   left: 0;
+   transform: none;
+}
+header .container{
+    border-radius: 0;
+}
+}
+.mainheader li{
+    margin-left: 2.5rem;
+}
+.mainheader a{
+   font-size: 1.15rem; 
+   color: #000;
+   transition: 0.3s;
+}
+.mainheader li:hover a{
+    color: rgb(252, 176, 63);
+}
+
+
+/* about  */
+.aboutsection{
+  background-image: url(../images/about2.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+/* @media (max-width:992px) {
+    .aboutsection{
+        background-position: right top;
+    }
+} */
+.aboutbimg2, .aboutbimg1{
+position: relative;
+border-radius: 10px;
+width: fit-content;
+}
+.aboutbimg1{
+    z-index: 1;
+}
+@media (max-width:576px) {
+    .aboutbimg1{
+        width: 100%;
+    }
+}
+.aboutbimg2{
+    z-index: -1;
+    transform: translate(15%, -15%);
+}
+
+.counteddiv{
+transform: translateY(-200%);
+    background-color: #fff;
+    /* border: 2px solid red; */
+    width: fit-content;
+    padding:1rem 2rem;
+    border-radius: 10px 10px 0 10px;
+    position: absolute;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+animation: lift 0.8s ease infinite;
+}
+@keyframes lift {
+    0%, 100%, 20%, 50%, 80%{
+        transform: translateY(-200%);
+    }
+40%{
+    transform: translateY(-200%) translateY(-5px);
+}
+60%{
+    transform: translateY(-200%) translateY(-10px);
+}
+}
+ .counteddiv::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  margin-top: 1.1rem;
+  /* bottom: 0; */
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-top: 25px solid #fff; /* color of triangle */
+}
+
+.counteddiv span{
+font-size: 4rem;
+color: rgb(16, 117, 60);
+font-weight: 700;
+}
+.counteddiv p{
+    font-weight: 700;
+    color: rgb(252, 176, 63);
+    margin-bottom: 0;
+}
+
+
+.abouticons > div h3{
+    color: rgb(252, 176, 63);
+    transition: 0.3s;
+}
+.abouticons > div:hover h3{
+    color: rgb(131, 192, 66);
+}
+
+/* footer */
+footer{
+    background-color: #fffbe8;
+}
+/* .footerdiv{
+    background-image: url(../images/footer-pattern-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
