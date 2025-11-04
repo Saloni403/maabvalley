@@ -111,7 +111,7 @@ color: #fff;
 .menuicons i{
 margin-right: 1rem;
 background-color: rgb(252, 176, 63);
-padding:0.7rem 1rem;
+padding:0.6rem 1rem;
 color: #fff;
 border-radius: 50%;
 transition: transform 0.8s ease-in-out; /* smoother and visible */
@@ -331,14 +331,149 @@ font-weight: 700;
     color: rgb(131, 192, 66);
 }
 
+
+/* service cards */
+.servicecard{
+    /* border: 2px solid red; */
+     box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.379);
+    border-top: 5px solid rgb(252, 176, 63);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.demo{
+    position: relative;
+}
+.servicecardicon1{
+    padding: 1rem 0.5rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 1rem;
+    border-radius: 10px;
+    border:3px solid rgb(252, 176, 63);
+    background-color: #fff;
+    transition: 0.6s;
+}
+.servicecardicon2{
+     padding: 0.6rem 1rem;
+    position: absolute;
+    bottom: 50px;
+    /* transform: translateY(15%); */
+    left: 1rem;
+    border-radius: 50%;
+    border:3px solid rgb(252, 176, 63);
+    background-color: #fff;
+}
+.servicecardicon2 i{
+    font-size: 1.5rem;
+}
+.servicecard:hover .servicecardicon1{
+    transform:translateY(-50%) rotate3d(0,1,0,180deg);
+     background-color: rgb(252, 176, 63);
+}
+.servicecardimg img{
+ border-radius: 0 0 10px 10px; 
+ transition: 0.6s; 
+
+}
+.servicecardimg{
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.servicecardimg::after{
+    content: "";
+   background: linear-gradient(110deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 70%);
+    transform: translateX(-100%) skewX(-15deg);
+    transition: transform 0.6s 
+ease;
+    z-index: 99;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+border-radius: 0 0 10px 10px;
+}
+.servicecard:hover .servicecardimg::after{
+ transform: translateX(100%) skewX(-15deg);
+}
+.servicecard:hover .servicecardimg img{
+    transform:rotate(3deg) scale(1.1);
+}
+.servicecard .firstmainheading{
+    font-size: 1.5rem;
+    color: rgb(16, 117, 60);
+    transition: 0.3s;
+}
+
+.servicecard:hover .firstmainheading{
+    color: rgb(252, 176, 63);
+}
+
+/* our projects */
+.ourproj{
+    background-image: url(../images/ourproj.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+.ourproj .row{
+    background-color: rgb(16, 117, 60);
+border-radius: 10px;
+ box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.379);
+}
+.ourproj .row .col-lg-6{
+   /* padding: 0;  */
+   color: #fff;
+}
+.ourproj .row .col-lg-6 ul li{
+   line-height: 2;
+}
+
 /* footer */
 footer{
-    background-color: #fffbe8;
+    background-color: #1f1e17;
+    color: #fff;
 }
-/* .footerdiv{
+footer i{
+    color: rgb(252, 176, 63);
+}
+.footerdiv{
     background-image: url(../images/footer-pattern-1.png);
-    background-position: center;
+    background-position: center ;
     background-size: cover;
     background-repeat: no-repeat;
+position: relative;
+line-height: 2;
+}
+.footerdiv::before{
+content: "";
+position: absolute;
+top: -50px;
+left: 0;
+right: 0;
+height: 50px;
+background-image: url(../images/footertop.png);
+ background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-} */
+footer ul li a , .contactinfo a{
+    color: #fff;
+}
+.footercompanyicons i{
+padding:0.5rem 1rem;
+border-radius: 50%;
+transition: 0.3s;
+}
+
+.footercompanyicons i:hover{
+background-color: rgb(131, 192, 66);
+color: #fff;
+}
+.footercompanyinfo p{
+    line-height: 1.5;
+}

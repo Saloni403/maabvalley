@@ -4,7 +4,7 @@ function openMenu(){
 
 window.addEventListener("scroll", function() {
   const header = document.querySelector("header");
-  if (window.scrollY > 100) {
+  if (window.scrollY > 180) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -113,12 +114,12 @@
   </div>
   
   <!-- banner -->
- <section class="body">
+ <section class="body overflow-hidden">
   <swiper-container class="mySwiper" init="false">
     <swiper-slide style="background-image: url(web/images/slider-1.jpg);">
       <div>
-        <div class="bannertext">
-       <p class="firstmainheading">Welcome To Agriculture Farm</p>
+        <div class="bannertext" data-aos="fade-right" data-aos-duration="2000">
+       <p class="firstmainheading" >Welcome To Agriculture Farm</p>
        <h1>
         Pure
         <span>Agriculture</span>
@@ -129,7 +130,7 @@
       </div>
       </div>
     </swiper-slide>
-  <swiper-slide style="background-image: url(web/images/slider-1.jpg);">
+  <swiper-slide style="background-image: url(web/images/bannerimgfarming.jpg);">
       <div>
         <div class="bannertext">
        <p class="firstmainheading">Welcome To Agriculture Farm</p>
@@ -189,10 +190,10 @@
 </section>
 
 <!-- about section -->
- <section class="mt-5 pt-5 aboutsection">
+ <section class="mt-5 pt-5 aboutsection overflow-hidden">
   <div class="container">
     <div class="row d-flex flex-xl-row flex-column-reverse ">
-      <div class="col-xl-6">
+      <div class="col-xl-6" data-aos="fade-right" data-aos-duration="3000">
         <div class="position-relative">
           <img src="web/images/aboutbimg1.jpg" class="aboutbimg1" alt="">
           <img src="web/images/aboutbimg2.jpg" class="aboutbimg2 d-sm-block d-none" alt="">
@@ -205,11 +206,13 @@
 
       <div class="col-xl-6">
         <div class="mb-xl-0 mb-5">
+          <div data-aos="fade-left" data-aos-duration="2000">
           <div class="d-flex align-items-center">
             <img src="web/images/sec-title.png" width="50" alt="">
             <p class="firstmainheading ms-3 mb-0">Our Introduction</p>
           </div>
           <h1 class="secondmainheading">Agriculture & Organic Product Form</h1>
+          </div>
           <div class="greytext">
           <p>The Organic Food Park is envisioned as an 
 integrated hub for sustainable agriculture, 
@@ -232,7 +235,7 @@ development, and the creation of healthy
 communities.
 </p>
 </div>
-<div class="mt-5 abouticons d-lg-flex align-items-center justify-content-between">
+<div class="mt-5 abouticons d-lg-flex align-items-center justify-content-between" data-aos="fade-left" data-aos-duration="2000">
   <div class="d-flex align-items-center justify-content-lg-between mb-lg-0 mb-4">
     <img src="web/images/vegetable.png" width="60" alt="">
     <h3 class="ms-3">Professional Farmers</h3>
@@ -252,46 +255,334 @@ communities.
  </section>
 
  <!-- what we are doing -->
- <section>
+ <section class="my-5 pb-5 overflow-hidden">
   <div class="container">
+    <div data-aos="fade-right" data-aos-duration="2000" >
 <div class="d-flex align-items-center">
             <img src="web/images/sec-title.png" width="50" alt="">
             <p class="firstmainheading mx-3 mb-0">What We Are Doing</p>
             <img src="web/images/sec-title.png" width="50" alt="">
           </div>
           <h1 class="secondmainheading">We Provide Best Services For Our Customer</h1>
-        <div class="row">
-          <div class="col-4">
-            <div>
-              <div>
-                <h3>Agriculture Products</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        <div class="row py-5 gy-5">
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+            <div class="servicecard">
+              <div class="p-sm-5 p-3">
+                <p class="firstmainheading">Organic & Sustainable Farming Solutions</p>
+                <ul>
+                  <li><span class="text-success fw-bold">-></span> Organic crop cultivation (vegetables, pulses, herbs, grains)</li>
+                  <li><span class="text-success fw-bold">-></span> Certification & training in organic farming</li>
+                  <li><span class="text-success fw-bold">-></span> Supply of bio-fertilizers, vermicompost, and natural growth promoters</li>
+                </ul>
+              </div>
+              <div class="demo">
+              <div class="servicecardimg">
+                <img src="web/images/aboutbimg1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="servicecardicon1">
+                <img src="web/images/drone.png" width="50" alt="">
+              </div>
+              <div class="servicecardicon2">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
               </div>
             </div>
           </div>
-        </div>  
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+            <div class="servicecard">
+              <div class="p-sm-5 p-3">
+                <p class="firstmainheading">Polyhouse & Protected Cultivation Projects</p>
+                 <ul>
+                  <li><span class="text-success fw-bold">-></span> Organic crop cultivation (vegetables, pulses, herbs, grains)</li>
+                  <li><span class="text-success fw-bold">-></span> Certification & training in organic farming</li>
+                  <li><span class="text-success fw-bold">-></span> Supply of bio-fertilizers, vermicompost, and natural growth promoters</li>
+                </ul>
+              </div>
+              <div class="demo">
+              <div class="servicecardimg">
+                <img src="web/images/aboutbimg1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="servicecardicon1">
+                <img src="web/images/drone.png" width="50" alt="">
+              </div>
+              <div class="servicecardicon2">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+            <div class="servicecard">
+              <div class="p-sm-5 p-3">
+                <p class="firstmainheading">Hydroponic & Soilless Farming Systems</p>
+                 <ul>
+                  <li><span class="text-success fw-bold">-></span> Organic crop cultivation (vegetables, pulses, herbs, grains)</li>
+                  <li><span class="text-success fw-bold">-></span> Certification & training in organic farming</li>
+                  <li><span class="text-success fw-bold">-></span> Supply of bio-fertilizers, vermicompost, and natural growth promoters</li>
+                </ul>
+              </div>
+               <div class="demo">
+              <div class="servicecardimg">
+                <img src="web/images/aboutbimg1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="servicecardicon1">
+                <img src="web/images/drone.png" width="50" alt="">
+              </div>
+              <div class="servicecardicon2">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="text-center">
+        <a href="" class="buttondesign "><span>Discover More</span></a>
+        </div>
   </div>
   
  </section>
 
+ <!-- our projects / what we want to do -->
+  <section class="my-5 pb-5 overflow-hidden">
+    <div class="container ourproj">
+       <div data-aos="fade-right" data-aos-duration="2000">
+      <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading mx-3 mb-0">Project Gallery</p>
+            <img src="web/images/sec-title.png" width="50" alt="">
+          </div>
+          <h1 class="secondmainheading mb-5">We’ve Done Many Other Projects</h1>
+          </div>
+<!-- my project 1 -->
+ <div class="single-item">
+          <div class="row d-lg-flex p-sm-5 p-3 ourproj ">
+<div class="col-lg-6">
+  <div>
+    <img src="web/images/ourprojects1.jpg" class="img-fluid" alt="">
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="mt-lg-0 mt-5">
+     <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading ms-3 mb-0">Get To Know Us</p>
+          </div>
+          <h1 class="secondmainheading"> Agricultural Development Services</h1>
+          <ul>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Polyhouse Projects:</span> Setup and training for climate-controlled crop cultivation.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Hydroponic & Vertical Farming:</span> Modern soil-less systems for small or landless farmers.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Open Field Cultivation Support:</span> Technical assistance, organic fertilizers, and quality seeds.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Nursery Development:</span> Plant propagation, seedling supply, and sapling sales.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Floriculture & Medicinal Plants:</span> Training and project development in flower and herb cultivation.</li>
+          </ul>
 
+  </div>
+</div>
+          </div>
+
+          <!-- my project 2 -->
+            <div class="row d-lg-flex p-sm-5 p-3 ourproj">
+<div class="col-lg-6">
+  <div>
+    <img src="web/images/ourprojects1.jpg" class="img-fluid" alt="">
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="mt-lg-0 mt-5">
+     <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading ms-3 mb-0">Get To Know Us</p>
+          </div>
+          <h1 class="secondmainheading"> Farmer Empowerment & Training</h1>
+          <ul>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Skill Development Programs:</span> Practical workshops on organic farming, composting, and modern
+ irrigation.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Hydroponic & Vertical Farming:</span> Modern soil-less systems for small or landless farmers.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Open Field Cultivation Support:</span> Technical assistance, organic fertilizers, and quality seeds.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Nursery Development:</span> Plant propagation, seedling supply, and sapling sales.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Floriculture & Medicinal Plants:</span> Training and project development in flower and herb cultivation.</li>
+          </ul>
+
+  </div>
+</div>
+          </div>
+
+          <!-- my project 3 -->
+            <div class="row d-lg-flex p-sm-5 p-3 ourproj">
+<div class="col-lg-6">
+  <div>
+    <img src="web/images/ourprojects1.jpg" class="img-fluid" alt="">
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="mt-lg-0 mt-5">
+     <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading ms-3 mb-0">Get To Know Us</p>
+          </div>
+          <h1 class="secondmainheading"> Agrotourism & Rural Entrepreneurship</h1>
+          <ul>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Polyhouse Projects:</span> Setup and training for climate-controlled crop cultivation.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Hydroponic & Vertical Farming:</span> Modern soil-less systems for small or landless farmers.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Open Field Cultivation Support:</span> Technical assistance, organic fertilizers, and quality seeds.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Nursery Development:</span> Plant propagation, seedling supply, and sapling sales.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Floriculture & Medicinal Plants:</span> Training and project development in flower and herb cultivation.</li>
+          </ul>
+
+  </div>
+</div>
+          </div>
+
+           <!-- my project 4 -->
+            <div class="row d-lg-flex p-sm-5 p-3 ourproj">
+<div class="col-lg-6">
+  <div>
+    <img src="web/images/ourprojects1.jpg" class="img-fluid" alt="">
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="mt-lg-0 mt-5">
+     <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading ms-3 mb-0">Get To Know Us</p>
+          </div>
+          <h1 class="secondmainheading"> Environmental & Sustainability Services</h1>
+          <ul>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Polyhouse Projects:</span> Setup and training for climate-controlled crop cultivation.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Hydroponic & Vertical Farming:</span> Modern soil-less systems for small or landless farmers.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Open Field Cultivation Support:</span> Technical assistance, organic fertilizers, and quality seeds.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Nursery Development:</span> Plant propagation, seedling supply, and sapling sales.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Floriculture & Medicinal Plants:</span> Training and project development in flower and herb cultivation.</li>
+          </ul>
+
+  </div>
+</div>
+          </div>
+
+           <!-- my project 5 -->
+            <div class="row d-lg-flex p-sm-5 p-3 ourproj">
+<div class="col-lg-6">
+  <div>
+    <img src="web/images/ourprojects1.jpg" class="img-fluid" alt="">
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="mt-lg-0 mt-5">
+     <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading ms-3 mb-0">Get To Know Us</p>
+          </div>
+          <h1 class="secondmainheading"> Cold Chain & Post-Harvest Management</h1>
+          <ul>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Polyhouse Projects:</span> Setup and training for climate-controlled crop cultivation.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Hydroponic & Vertical Farming:</span> Modern soil-less systems for small or landless farmers.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Open Field Cultivation Support:</span> Technical assistance, organic fertilizers, and quality seeds.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Nursery Development:</span> Plant propagation, seedling supply, and sapling sales.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Floriculture & Medicinal Plants:</span> Training and project development in flower and herb cultivation.</li>
+          </ul>
+
+  </div>
+</div>
+          </div>
+
+           <!-- my project 6 -->
+            <div class="row d-lg-flex p-sm-5 p-3 ourproj">
+<div class="col-lg-6">
+  <div>
+    <img src="web/images/ourprojects1.jpg" class="img-fluid" alt="">
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="mt-lg-0 mt-5">
+     <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading ms-3 mb-0">Get To Know Us</p>
+          </div>
+          <h1 class="secondmainheading"> AMC & Joint Venture Services</h1>
+          <ul>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Polyhouse Projects:</span> Setup and training for climate-controlled crop cultivation.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Hydroponic & Vertical Farming:</span> Modern soil-less systems for small or landless farmers.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Open Field Cultivation Support:</span> Technical assistance, organic fertilizers, and quality seeds.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Nursery Development:</span> Plant propagation, seedling supply, and sapling sales.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Floriculture & Medicinal Plants:</span> Training and project development in flower and herb cultivation.</li>
+          </ul>
+
+  </div>
+</div>
+          </div>
+
+           <!-- my project 7 -->
+            <div class="row d-lg-flex p-sm-5 p-3 ourproj">
+<div class="col-lg-6">
+  <div>
+    <img src="web/images/ourprojects1.jpg" class="img-fluid" alt="">
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="mt-lg-0 mt-5">
+     <div class="d-flex align-items-center">
+            <img src="web/images/sec-title.png" width="50" alt="">
+            <p class="firstmainheading ms-3 mb-0">Get To Know Us</p>
+          </div>
+          <h1 class="secondmainheading"> Roof Top Gardening & Urban Farming</h1>
+          <ul>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Polyhouse Projects:</span> Setup and training for climate-controlled crop cultivation.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Hydroponic & Vertical Farming:</span> Modern soil-less systems for small or landless farmers.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Open Field Cultivation Support:</span> Technical assistance, organic fertilizers, and quality seeds.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Nursery Development:</span> Plant propagation, seedling supply, and sapling sales.</li>
+            <li><i class="bi bi-check2-all text-warning"></i> <span class="fw-bold">Floriculture & Medicinal Plants:</span> Training and project development in flower and herb cultivation.</li>
+          </ul>
+
+  </div>
+</div>
+          </div>
+</div>
+          </div>
+  </section>
+<style>
+.slick-next
+ {
+    right: 1rem !important;
+    top: -1.5rem !important;
+}
+.slick-prev
+ {
+    right: 2.5rem !important;
+    left: unset !important;
+      top: -1.5rem !important;
+}
+.slick-prev, .slick-next{
+
+}
+.slick-next:before, .slick-prev:before
+ {
+  
+    opacity: 1;
+    color: #000;
+   
+}
+</style>
  <!-- footer -->
-  <footer class="py-5">
+  <footer class="mt-5 py-5">
     <div class="footerdiv">
     <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div>
-            <img src="web/images/farminglogo.png" width="80" alt="">
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div>
+      <div class="row gy-5">
+        <div class="col-md-4">
+          <div class="footercompanyinfo">
+            <img src="web/images/farminglogo.png" width="100" class="rounded" alt="">
+            <p class="mt-3">MAAB VALLEY
+              <br>
+              Kashmir Organic Pvt. Ltd.
+            </p>
+            <div class="d-flex align-items-center gap-3 footercompanyicons">
               <i class="bi bi-facebook"></i>
         <i class="bi bi-whatsapp"></i>
         <i class="bi bi-instagram"></i>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
           <div>
             <h3>Quick Links</h3>
             <ul>
@@ -307,8 +598,8 @@ communities.
           </div>
         </div>
 
-        <div class="col-4">
-          <div>
+        <div class="col-md-4">
+          <div class="contactinfo">
              <h3>Contact Info</h3>
              <div class="d-flex flex-column">
              <a href=""><i class="bi bi-geo-alt-fill"></i> Noida Sector 62</a>
@@ -321,6 +612,9 @@ communities.
     </div>
     </div>
   </footer>
+  <div class="footerbottom p-3 bg-black text-white text-center">
+<p class="mb-0">© Copyright 2025 All Rights Reserved. | Designed & Developed by <a href="https://tssgtech.com" class="text-white">Tssg-Tech.</a></p>
+  </div>
 
   <script src="web/js/script.js"></script>
 
@@ -330,9 +624,11 @@ communities.
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
  <script type="text/javascript">
     $(".single-item").slick();
-
+  AOS.init();
 
     // banner js start
      const swiperEl = document.querySelector('swiper-container')
@@ -369,6 +665,7 @@ communities.
     // banner js end
 
   </script>
+  
 </body>
 
 </html>
