@@ -808,3 +808,48 @@ padding:0.5rem 1rem;
     text-align: center;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About page */
+.smallbanner{
+  background-image: url(../images/smallbannerimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+ background-size: cover;
+ height: 60vh;
+ 
+}
+.smallbannerdiv{
+  background-color: rgba(0, 0, 0, 0.201);
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column
+}
+.smallbannerdiv h1{
+  font-size: 4rem;
+}
+.smallbannerdiv p{
+  font-size: 18px;
+  font-weight: 600;
+}
+.smallbannerdiv span{
+  color: rgb(252, 176, 63);
+}
