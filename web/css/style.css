@@ -13,9 +13,54 @@ ul{
 }
 li{
     list-style: none;
-
 }
 
+/* icons btn */
+.whatsappbtn, .callbtn{
+    position: fixed;
+     right: 1rem;
+    color: #fff;
+    background-color: rgb(16, 117, 60);
+    border: 4px solid rgb(252, 176, 63);
+    padding:0.3rem 0.8rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 99;
+    
+}
+@keyframes lift2 {
+    0%, 100%, 20%, 50%, 80%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-5px);
+    }
+     60%{
+        transform: translateY(-10px);
+    }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg) scale(0.9);
+  }
+  15%, 45%, 75% {
+    transform: rotate(-5deg) scale(1.02);
+  }
+  30%, 60%, 90% {
+    transform: rotate(5deg) scale(1.02);
+  }
+}
+.whatsappbtn{
+animation: lift2 1s ease infinite;
+ bottom: 150px;
+}
+.callbtn{
+  
+     bottom: 50px;
+}
+.callbtn:hover{
+animation: shake 1s ease-in-out infinite;
+}
 .secondmainheading{
 font-size: 3rem;
 font-weight: bold;
@@ -413,25 +458,27 @@ border-radius: 0 0 10px 10px;
 }
 
 /* our projects */
-.ourproj{
-    background-image: url(../images/ourproj.png);
+
+.ourproj .rows{
+   background: rgb(16, 117, 60);
+border-radius: 10px;
+ box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.379);
+ background-image: url(../images/ourproj.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     /* background-size: cover; */
 }
-.ourproj .row{
-    background-color: rgb(16, 117, 60);
-border-radius: 10px;
- box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.379);
-}
-.ourproj .row .col-lg-6{
+
+.ourproj .rows .col{
    /* padding: 0;  */
    color: #fff;
 }
-.ourproj .row .col-lg-6 ul li{
+.ourproj .rows .col ul li{
    line-height: 2;
 }
-
+.ourproj .rows .col img{
+    border-radius: 10px;
+}
 /* footer */
 footer{
     background-color: #1f1e17;
@@ -476,4 +523,288 @@ color: #fff;
 }
 .footercompanyinfo p{
     line-height: 1.5;
+}
+
+/* testimonial */
+.clientscard .col{
+border-radius: 10px;
+    background-color: #fff;
+   box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.379);
+}
+.clientscardimgdiv img{
+    border-radius: 50%;
+    border: 4PX solid #fff;
+    position: relative;
+}
+.clientscardimgdiv{
+    position: relative;
+}
+.clientscardimgdiv::before{
+content: "";
+    position: absolute;
+  right: -6px;
+    top: -45px;
+    bottom: -6px;
+    left: -6px;
+    border-radius: 30px 0px 100px 100px;
+    background-image: linear-gradient(to bottom, #82bf42, #65ad42, #4a9b41, #30883f, #11763c);
+
+}
+.clientscardimgdiv::after{
+content: "";
+    position: absolute;
+    top: -45px;
+    right: -26px;
+ border-left: 20px solid #666666;
+ border-top: 20px solid transparent;
+}
+
+/* contact form */
+
+
+.contactform {
+  background-color: rgb(16, 117, 60);
+  color: #fff;
+  position: relative;
+  margin-bottom: 6rem;
+}
+@keyframes motion {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+background-position: -1000px 0;
+    }
+}
+.contactform::before{
+    content: "";
+    position: absolute;
+top: -20px;
+left: 0;
+background-image: url(../images/contact-pattern-1.png);
+background-repeat: repeat-x;
+  background-size: contain;
+background-size: auto 100%;
+  height: 20px;
+width: 100%;
+animation: motion 10s linear infinite;
+}
+.contactform::after{
+    content: "";
+    position: absolute;
+bottom: -20px;
+left: 0;
+background-image: url(../images/contactform-pattern-2.png);
+background-repeat: repeat-x;
+  background-size: contain;
+  background-size: auto 100%;
+height: 20px;
+width: 100%;
+animation: motion 10s linear infinite;
+}
+
+.contactformimg img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.contactformimg img:hover {
+  transform: scale(1.03);
+}
+/* @keyframes clockmove {
+    0%,100%{
+transform: translate(-15px, -50%)
+    }
+    50%{
+      transform: translate(15px, -50%)
+    }
+}
+@keyframes clockmove2 {
+    0%,100%{
+transform: rotate(5deg);
+    }
+    50%{
+       transform: rotate(-5deg);
+    }
+
+}
+.formicon{
+    font-size: 4rem;
+    background-color: rgb(131, 192, 66);
+    color: #fff;
+    border: 8px solid rgb(252, 176, 63);
+    outline:6px solid #fff;
+    outline-offset: 6px;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 1rem 2rem;
+animation: clockmove 3s linear infinite;
+}
+.formicon::before{
+    content: "";
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(252, 176, 63);
+    height: 300px;
+    width: 8px;
+    animation: clockmove2 3s linear infinite;
+}
+@media (max-width:576px) {
+    .formicon{
+font-size: 2rem;
+padding:0.5rem 1rem;
+    }
+} */
+
+
+/* ✅ Wrapper that holds the entire pendulum */
+.pendulum {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  transform: translateY(-50%);
+  height: 320px;
+  width: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transform-origin: top center;
+  animation: swing 3s ease-in-out infinite;
+}
+
+/* ✅ The rod */
+.pendulum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 270px;
+  background-color: rgb(252, 176, 63);
+  border-radius: 4px;
+}
+
+/* ✅ The round icon (the hanging ball) */
+.formicon {
+  font-size: 3rem;
+  background-color: rgb(131, 192, 66);
+  color: #fff;
+  border: 8px solid rgb(252, 176, 63);
+  outline: 6px solid #fff;
+  outline-offset: 6px;
+  border-radius: 50%;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* ✅ Smooth swinging animation */
+@keyframes swing {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+/* 🔹 Responsive size for mobile */
+@media (max-width: 576px) {
+  .formicon {
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .pendulum {
+    right: 2rem;
+    height: 240px;
+  }
+
+  .pendulum::before {
+    height: 200px;
+  }
+}
+
+.contactformform {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.contactformform form input,
+.contactformform form textarea {
+  border-radius: 10px;
+  border: none;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.contactformform form input:focus,
+.contactformform form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(16, 117, 60, 0.4);
+}
+
+.contactformform .buttondesign {
+  display: inline-block;
+  background-color: rgb(16, 117, 60);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.contactformform .buttondesign:hover {
+  background-color: #0d804a;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contactformform  .secondmainheading {
+  font-size: 2rem;
+  color: rgb(16, 117, 60);
+  font-weight: 700;
+}
+
+/* .contactformform  .firstmainheading {
+  font-size: 1.1rem;
+  color: rgb(16, 117, 60);
+  font-weight: 500;
+} */
+
+/* 🌐 Responsive Design */
+@media (max-width: 991px) {
+  .contactformform {
+    margin-top: 2rem;
+  }
+
+ .contactformform .secondmainheading {
+    font-size: 1.6rem;
+  }
+
+ .contactformform .buttondesign {
+    width: 100%;
+    text-align: center;
+  }
 }
