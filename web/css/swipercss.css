@@ -40,13 +40,7 @@
 .bannertext {
 color:#fff;
 }
-.firstmainheading{
-  text-transform: capitalize;
-  font-weight: bold;
-  font-size: 18px;
-    font-family: "Edu NSW ACT Hand Pre", cursive;
-    color: rgb(252, 176, 63);
-}
+
 .bannertext h1{
     font-size: 76px;
     font-weight: bold;

@@ -61,6 +61,13 @@ animation: lift2 1s ease infinite;
 .callbtn:hover{
 animation: shake 1s ease-in-out infinite;
 }
+.firstmainheading{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 18px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    color: rgb(252, 176, 63);
+}
 .secondmainheading{
 font-size: 3rem;
 font-weight: bold;
@@ -208,6 +215,7 @@ header .container{
     background-color: #fffbe8;
     border-radius: 10px;
     padding: 0.5rem;
+    box-shadow: 0px 4px 16px rgba(101, 101, 101, 0.427);
 }
 .topnavicons i{
     margin-left: 1rem;
@@ -852,4 +860,174 @@ padding:0.5rem 1rem;
 }
 .smallbannerdiv span{
   color: rgb(252, 176, 63);
+}
+
+/* get to know us */
+.gtkussection{
+  background-image: url(../images/about2.png);
+}
+@keyframes abimg2lift {
+  0%,100%,20%,50%,80%{
+transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-5px);
+  }
+  60%{
+    transform: translateY(-10px);
+  }
+}
+.apimgdiv{
+  position: relative;
+}
+.apimgdiv::after{
+content: "";
+position: absolute;
+bottom: 0;
+right: 0;
+height:100%;
+width: 100%;
+background-image: url(../images/about-one_tomato.png);
+background-repeat: no-repeat;
+background-position: center bottom;
+animation: abimg2lift 0.8s ease infinite ;
+}
+
+/* mission */
+@media (min-width:1440px) {
+  .misssioncontainer{
+  width: 90%;
+}
+}
+.missiondives .missions{
+  border: 2px solid rgb(252, 176, 63);
+  padding: 2rem;
+  border-radius: 50% 50% 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ background-color: rgb(254 225 182);
+  transition: 0.3s;
+}
+.missiondives .missions h6{
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+}
+.missiondives .missions:hover{
+background-color: rgb(131, 192, 66);
+}
+.missiondives .missions:hover h6{
+color: #fff;
+}
+
+
+/* vission */
+.vissionimgbig{
+  border-radius: 10px 10px 150px 20px;
+}
+.vissionimgbig img{
+  border-radius: 10px 10px 150px 20px;
+}
+.vissionimg{
+position: absolute;
+left: 0;
+bottom: 0;
+background-color: rgb(252, 176, 63);
+color: #fff;
+border-radius: 20px 0 20px 20px;
+padding: 1rem;
+border: 5px solid #fff;
+}
+.vissionimgp{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+      font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+
+/* our team */
+/* .myteamdivframe{
+perspective: 1000px;
+}
+
+.myteamdiv{
+  position: relative;
+  transition:transform 1s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+.backdiv{
+   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+backface-visibility: hidden;
+  background-color: rgb(16, 117, 60);
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+flex-direction: column;
+}
+
+.myteamdivframe:hover .myteamdiv{
+transform: rotate3d(0,1,0,180deg);
+} */
+
+.myteamdivframe {
+  perspective: 1000px;
+  width: 100%;           /* change as needed */
+     aspect-ratio:4/5;
+}
+
+.myteamdiv {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+
+}
+
+.frontdiv,
+.backdiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Front side (Image) */
+.frontdiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Back side (Content) */
+.backdiv {
+  background-color: rgb(16, 117, 60);
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+/* Flip Effect */
+.myteamdivframe:hover .myteamdiv {
+  transform: rotateY(180deg);
 }
