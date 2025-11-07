@@ -197,14 +197,13 @@ left: 50%;
    transform: translate(-50%, -2rem);
    position: absolute;
    z-index: 2;
-   
 }
 header.sticky{
-    position: sticky;
+    /* position: sticky; */
+position: fixed;
     top:1rem;
    left: 0;
    transform: none;
-   
 }
 @media (max-width:576px) {
     header.sticky{
@@ -1030,4 +1029,57 @@ transform: rotate3d(0,1,0,180deg);
 /* Flip Effect */
 .myteamdivframe:hover .myteamdiv {
   transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+/* blog page */
+.blogss{
+  box-shadow: 0px 4px 16px rgba(101, 101, 101, 0.427);
+}
+.blogss .blogimgdiv{
+overflow: hidden;
+position: relative;
+}
+.blogss .blogimgdiv::after{
+content: "";
+background-color: rgba(0, 0, 0, 0.301);
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 0;
+transition: 0.3s;
+
+}
+.blogss .blogimgdiv img{
+width: 100%;
+transition: 0.6s;
+}
+.blogss,.blogss .blogimgdiv, .blogss .blogimgdiv img{
+  border-radius: 10px 10px 0 0;
+}
+.blogtext p{
+  font-size: 18px;
+  font-weight: 600;
+}
+.blogtext p i{
+color: rgb(131, 192, 66);
+font-size: 1.5rem;
+}
+.blogtext h4{
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.blogss:hover .blogimgdiv img{
+transform: scale(1.2);
+}
+.blogss:hover .blogimgdiv::after{
+width:100%;
 }

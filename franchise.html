@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="franchise-section">
+    <div class="overlay"></div>
+
+    <div class="content-box">
+      <div class="image-side">
+        <img src="web/images/bannerimgfarming.jpg" alt="Maab Valley Organic Farm">
+        <div class="image-text">
+          <h2>Grow with Maab Valley</h2>
+          <p>Be a part of India’s leading organic farming network. Together, let’s bring health and sustainability to every plate.</p>
+        </div>
+      </div>
+
+      <div class="form-side glass">
+        <h1 class="title">Franchise Enquiry</h1>
+        <p class="subtitle">Partner with Maab Valley and join our mission of sustainable growth.</p>
+
+        <form id="franchiseForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Full Name *" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email Address *" required>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="Phone Number *" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="location" placeholder="City / Location *" required>
+          </div>
+
+          <div class="form-group">
+            <select id="investment" required>
+              <option value="">Approx. Investment (₹)</option>
+              <option>Below ₹5 Lakhs</option>
+              <option>₹5 - ₹10 Lakhs</option>
+              <option>₹10 - ₹20 Lakhs</option>
+              <option>Above ₹20 Lakhs</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" rows="3" placeholder="Business Experience / Message"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Enquiry</button>
+        </form>
+
+        <p id="successMessage" class="success-message"></p>
+      </div>
+    </div>
+  </section>
+<style>/* Base Styling */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #e9f5ee;
+  overflow-x: hidden;
+}
+
+/* Section Background */
+.franchise-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("web/images/organicbg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay for better text contrast */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(46, 125, 50, 0.4);
+  backdrop-filter: blur(3px);
+}
+
+/* Content container */
+.content-box {
+  position: relative;
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1.2s ease-in-out;
+  z-index: 2;
+}
+
+/* Image side */
+.image-side {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 6s ease;
+}
+
+.image-side:hover img {
+  transform: scale(1.1);
+}
+
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.image-text h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.image-text p {
+  font-size: 1rem;
+  max-width: 80%;
+  opacity: 0.9;
+}
+
+/* Glassmorphic Form Side */
+.form-side {
+  flex: 1;
+  padding: 40px 35px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0 20px 20px 0;
+}
+
+.title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #d1ffd2;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  outline: none;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.5);
+  transform: translateY(-2px);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.1rem;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #1b5e20, #43a047);
+  transform: scale(1.03);
+}
+
+.success-message {
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: 600;
+  display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+  .content-box {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+  .image-side {
+    height: 250px;
+  }
+  .glass {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+</style>
+  <script src="franchise.js"></script>
+  <script>
+   document.getElementById("franchiseForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+
+  if (!name || !email || !phone) {
+    alert("Please fill all required fields!");
+    return;
+  }
+
+  const messageBox = document.getElementById("successMessage");
+  messageBox.textContent = "🌿 Thank you! Our Maab Valley team will reach out soon.";
+  messageBox.style.display = "block";
+
+  document.getElementById("franchiseForm").reset();
+});
+
+  </script>
+</body>
+</html>
