@@ -203,7 +203,8 @@ header.sticky{
 position: fixed;
     top:1rem;
    left: 0;
-   transform: none;
+    transform: translateY(0); /* 👈 smooth drop-down effect */
+
 }
 @media (max-width:576px) {
     header.sticky{
