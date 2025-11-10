@@ -488,6 +488,9 @@ border-radius: 10px;
     border-radius: 10px;
 }
 /* footer */
+.footercompanyinfo img{
+  cursor: pointer;
+}
 footer{
     background-color: #1f1e17;
     color: #fff;
@@ -1083,4 +1086,31 @@ transform: scale(1.2);
 }
 .blogss:hover .blogimgdiv::after{
 width:100%;
+}
+
+
+
+
+
+/* contact us info page */
+.cuinfo{
+  background-image: url(../images/contactinfo.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.contactusinfodiv{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+.contactusinfodiv i{
+color: #fff;
+background-color: rgb(16, 117, 60);
+padding: 1rem;
+font-size: 1.5rem;
+margin-right: 1rem;
+}
+.contactpage .contactformform{
+  margin-top: 0;
 }
