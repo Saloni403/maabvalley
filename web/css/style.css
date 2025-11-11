@@ -1117,3 +1117,116 @@ margin-right: 1rem;
 .contactpage .contactformform{
   margin-top: 0;
 }
+
+
+
+
+
+
+
+
+
+/* foundation pAGE */
+.foundationbanner{
+  position: relative;
+}
+.foundationbanner img{
+ height: 80vh;
+ width: 100%;
+object-fit: cover;
+
+}
+.foundationbannerdiv{
+  background-color: rgba(0, 0, 0, 0.303);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.foundationbannerdiv > div{
+  width: 90%
+}
+@media (min-width:1024px) {
+  .foundationbannerdiv > div{
+  width: 50%
+}
+}
+
+/* main landing page */
+
+@media (min-width:576px) {
+  .msolp{
+ transform: translateY(-100px);
+}
+}
+.cardbgcol1{
+   background-color:rgb(254 225 182);
+  border: 2px solid rgb(252, 176, 63);
+}
+.cardbgcol3{
+   background-color:rgb(234, 254, 182);
+  border: 2px solid rgb(227, 252, 63);
+}
+.cardbgcol2{
+   background-color:rgb(182, 188, 254);
+  border: 2px solid rgb(63, 85, 252);
+}
+.cardbgcol4{
+   background-color:rgb(254, 182, 244);
+  border: 2px solid rgb(252, 63, 183);
+}
+.cardbgcol5{
+   background-color:rgb(182, 223, 254);
+  border: 2px solid rgb(63, 208, 252);
+}
+.cardbgcol6{
+   background-color:rgb(254, 182, 182);
+  border: 2px solid rgb(252, 63, 63);
+}
+.cardbgcol1 img{
+     background-color: rgb(252, 176, 63);
+}
+.cardbgcol2 img{
+  background-color: rgb(63, 85, 252);
+}
+.cardbgcol3 img{
+  background-color: rgb(227, 252, 63);
+}
+.cardbgcol4 img{
+     background-color: rgb(252, 63, 183);
+}
+.cardbgcol5 img{
+     background-color: rgb(63, 208, 252);
+}
+.cardbgcol6 img{
+     background-color: rgb(252, 63, 63);
+}
+.ourapproachdiv{
+  border-radius: 10px;
+  padding: 1rem;
+  
+}
+.ourapproach{
+background-image:  linear-gradient(to bottom, #82bf42, #65ad42, #4a9b41, #30883f, #11763c);
+
+}
+.ourapproachdiv img{
+  border-radius: 50%;
+  /* border: 2px solid rgb(255, 255, 255); */
+  margin-bottom: 2rem;
+  transition: 1s;
+  padding: 5px;
+}
+
+.ourapproachdiv p{
+  margin-bottom: 0;
+}
+.ourapproachdiv:hover img{
+  transform: rotate3d(0,1,0,360deg);
+}
