@@ -198,6 +198,9 @@ left: 50%;
    position: absolute;
    z-index: 2;
 }
+header img , .menu img{
+  cursor: pointer;
+}
 header.sticky{
     /* position: sticky; */
 position: fixed;
