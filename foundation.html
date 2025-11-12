@@ -13,6 +13,13 @@
 </head>
 
 <body>
+<!-- loader -->
+  <div class="loader">
+    <div>
+     <img src="web/images/loaderimg.png" width="150" alt="">
+     </div>
+  </div>
+
     <!-- icons -->
     <section>
         <div class="whatsappbtn">
@@ -253,21 +260,21 @@ yields and better market access.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div>
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="index.html"><i class="bi bi-chevron-double-right"></i> Home</a></li>
-                                <li><a href="about.html"><i class="bi bi-chevron-double-right"></i> About</a></li>
-                                <!-- <li><a href=""><i class="bi bi-chevron-double-right"></i> Retail</a></li>
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html"><i class="bi bi-chevron-double-right"></i> Home</a></li>
+                <li><a href="about.html"><i class="bi bi-chevron-double-right"></i> About</a></li>
+                <!-- <li><a href=""><i class="bi bi-chevron-double-right"></i> Retail</a></li>
       <li><a href=""><i class="bi bi-chevron-double-right"></i> Partnership</a></li> -->
-                                <li><a href="services.html"><i class="bi bi-chevron-double-right"></i> Services</a></li>
-                                <li><a href="franchise.html"><i class="bi bi-chevron-double-right"></i> Franchise</a>
-                                </li>
-                                <li><a href="blogs.html"><i class="bi bi-chevron-double-right"></i> Blogs</a></li>
-                                <li><a href="contact.html"><i class="bi bi-chevron-double-right"></i> Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <li><a href="services.html"><i class="bi bi-chevron-double-right"></i> Services</a></li>
+                <li><a href="franchise.html"><i class="bi bi-chevron-double-right"></i> Franchise</a></li>
+                <li><a href="blogs.html"><i class="bi bi-chevron-double-right"></i> Blogs</a></li>
+                 <li><a href="foundation.html"><i class="bi bi-chevron-double-right"></i> Foundation</a></li>
+                <li><a href="contact.html"><i class="bi bi-chevron-double-right"></i> Contact</a></li>
+              </ul>
+            </div>
+          </div>
 
                     <div class="col-md-4">
                         <div class="contactinfo">
@@ -295,6 +302,15 @@ yields and better market access.</p>
 
     <script type="text/javascript">
         AOS.init();
+
+        // loader
+         window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 3000); 
+  });
     </script>
 </body>
 

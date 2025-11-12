@@ -49,6 +49,14 @@
 </head>
 
 <body>
+
+<!-- loader -->
+  <div class="loader">
+    <div>
+     <img src="web/images/loaderimg.png" width="150" alt="">
+     </div>
+  </div>
+
   <!-- icons -->
   <section>
     <div class="whatsappbtn">
@@ -864,6 +872,17 @@
 
     swiperEl.initialize();
     // banner js end
+
+
+
+// loader
+ window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 3000); 
+  });
 
   </script>
 

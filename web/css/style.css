@@ -468,6 +468,41 @@ border-radius: 0 0 10px 10px;
     color: rgb(252, 176, 63);
 }
 
+/* service description */
+.price{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.servicedesc{
+  background-color: #00000081;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+  width:100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+    overflow: scroll;
+    padding: 1rem;
+}
+.servicedesc .container{
+  background-color: #fff;
+border-radius: 10px;
+box-shadow: 0px 4px 16px rgb(16, 15, 15);
+}
+.imgdiv{
+  position: relative;
+}
+.bi-arrow-left{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
 /* our projects */
 
 .ourproj .rows{
@@ -759,7 +794,8 @@ padding:0.5rem 1rem;
 }
 
 .contactformform form input,
-.contactformform form textarea {
+.contactformform form textarea,
+.contactformform form select {
   border-radius: 10px;
   border: none;
   background-color: #f7f7f7;
@@ -771,7 +807,8 @@ padding:0.5rem 1rem;
 }
 
 .contactformform form input:focus,
-.contactformform form textarea:focus {
+.contactformform form textarea:focus,
+.contactformform form select:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(16, 117, 60, 0.4);
 }
@@ -1137,7 +1174,7 @@ object-fit: cover;
 
 }
 .foundationbannerdiv{
-  background-color: rgba(0, 0, 0, 0.303);
+  background-color: rgba(0, 0, 0, 0.603);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1166,27 +1203,27 @@ object-fit: cover;
 }
 }
 .cardbgcol1{
-   background-color:rgb(254 225 182);
+   background-color:rgb(255, 255, 255);
   border: 2px solid rgb(252, 176, 63);
 }
 .cardbgcol3{
-   background-color:rgb(234, 254, 182);
+   background-color:rgb(255, 255, 255);
   border: 2px solid rgb(227, 252, 63);
 }
 .cardbgcol2{
-   background-color:rgb(182, 188, 254);
+   background-color:rgb(255, 255, 255);
   border: 2px solid rgb(63, 85, 252);
 }
 .cardbgcol4{
-   background-color:rgb(254, 182, 244);
+   background-color:rgb(255, 255, 255);
   border: 2px solid rgb(252, 63, 183);
 }
 .cardbgcol5{
-   background-color:rgb(182, 223, 254);
+   background-color:rgb(255, 255, 255);
   border: 2px solid rgb(63, 208, 252);
 }
 .cardbgcol6{
-   background-color:rgb(254, 182, 182);
+   background-color:rgb(255, 255, 255);
   border: 2px solid rgb(252, 63, 63);
 }
 .cardbgcol1 img{
@@ -1226,7 +1263,57 @@ background-image:  linear-gradient(to bottom, #82bf42, #65ad42, #4a9b41, #30883f
 
 .ourapproachdiv p{
   margin-bottom: 0;
+  color: #666666;
+  
 }
 .ourapproachdiv:hover img{
   transform: rotate3d(0,1,0,360deg);
 }
+
+/* loader */
+
+/* Loader container */
+.loader{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #82bf42, #65ad42, #4a9b41, #30883f, #11763c);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.loader >div{
+ position: relative;
+}
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.loader >div::after{
+ position: absolute;
+ content: "";
+ top: -0.5rem;
+ left: -0.5rem;
+ background-color: transparent;
+ width: calc(100% + 1rem);
+ height: calc(100% + 1rem);
+ border-radius: 50%;
+ /* background-color: #f7f7f7; */
+ border: 4px solid rgb(252, 176, 63);
+ /* border-top-color: white ; */
+  border-bottom-color: transparent ;
+z-index: -1;
+animation: rotation 1s linear infinite;
+}
+.loader >div img{
+background-color: #fffbe8;
+border-radius: 50%;
+}
+
