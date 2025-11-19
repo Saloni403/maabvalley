@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MAAB VALLEY FOUNDATION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    *{margin:0;
+         padding:0;
+          box-sizing:border-box; font-family:"Poppins",sans-serif;
+        }
+
+    body{
+        background:#fff;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100vh;
+        padding:20px;
+    }
+
+    .container{
+        width:100%;
+        max-width:950px;
+        border-radius:25px;
+        background:#fffbe8;
+        display:flex;
+        overflow:hidden;
+        border:2px solid rgb(16,117,60);
+        box-shadow:0px 12px 35px rgba(0,0,0,0.15),0px 0px 18px rgba(16,117,60,0.35);
+    }
+
+    .left{
+        flex:1;
+        background:#fffbe8;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+    }
+
+    .left img{
+        width:100%;
+        max-height:460px;
+        object-fit:contain;
+    }
+
+    .right{
+        flex:1.1;
+        padding:50px 45px;
+        background:#fffbe8;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    h2{ color:rgb(16,117,60); font-size:28px; font-weight:600; margin-bottom:5px; }
+    p{ color:#444; font-size:14px; margin-bottom:20px; }
+
+    .input-box{
+        width:100%; margin-bottom:18px; position:relative;
+    }
+    .input-box input{
+        width:100%; padding:12px 40px; font-size:14px;
+        border-radius:25px; border:1px solid #ddd; background:#fff;
+    }
+    .input-box i{
+        color:rgb(16,117,60); position:absolute; top:50%; left:14px; transform:translateY(-50%);
+    }
+
+    .btn{
+        width:100%; padding:12px; border:none; background:rgb(16,117,60);
+        color:#fffbe8; border-radius:25px; font-size:15px; cursor:pointer;
+    }
+
+    a{color:rgb(16,117,60); font-weight:500; cursor:pointer; text-decoration:none;}
+    a:hover{text-decoration:underline;}
+
+    .social{text-align:center; margin-top:15px; font-size:14px;}
+    .social-icons{display:flex; justify-content:center; margin-top:8px; gap:12px;}
+    .social-icons i{font-size:22px; cursor:pointer; color:rgb(16,117,60);}
+
+    /* Hide signup initially */
+    #signupForm{ display:none; }
+
+    @media(max-width:900px){
+        .container{flex-direction:column; text-align:center;}
+        .right{padding:30px;}
+        .left img{max-height:260px;}
+    }
+    @media (max-width:425px) {
+        .right{padding:1rem;}
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    
+    <div class="left">
+        <img src="web/images/farminglogo.png" alt="Login Image">
+    </div>
+
+    <div class="right">
+
+        <!-- LOGIN FORM -->
+        <div id="loginForm">
+            <h2>Hello Again!</h2>
+            <p>Welcome back! You’ve been missed 😊</p>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Enter Username">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Enter Password">
+            </div>
+
+            <button class="btn">Login</button>
+
+            <p style="margin-top:10px;">Don't have any account? <a onclick="showSignup()">Register here</a></p>
+
+            <div class="social">
+                Or continue with
+                <div class="social-icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div id="signupForm">
+            <h2>Create Account</h2>
+            <p>Join us for a better experience 🌱</p>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Enter Name">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter Email">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Enter Password">
+            </div>
+
+            <button class="btn">Register</button>
+
+            <p style="margin-top:10px;">Already have an account? <a onclick="showLogin()">Login</a></p>
+
+            <div class="social">
+                Or continue with
+                <div class="social-icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function showSignup(){
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("signupForm").style.display = "block";
+}
+
+function showLogin(){
+    document.getElementById("signupForm").style.display = "none";
+    document.getElementById("loginForm").style.display = "block";
+}
+</script>
+
+
+</body>
+</html>

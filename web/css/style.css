@@ -496,7 +496,8 @@ box-shadow: 0px 4px 16px rgb(16, 15, 15);
 .imgdiv{
   position: relative;
 }
-.bi-arrow-left{
+
+.imgdiv .bi-arrow-left{
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -1240,3 +1241,90 @@ animation: rotation 1s linear infinite;
 border-radius: 50%;
 }
 
+
+
+/* cart page */
+.bi-trash3{
+  color: rgb(16, 117, 60);
+}
+.carttext p:first-child{
+  margin-bottom: 0;
+}
+.cart hr{
+  margin-bottom: 0;
+}
+
+.summary-box {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.summary-table td {
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+.summary-table .total-row td {
+  font-size: 17px;
+}
+
+.summary-box h4 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.summary-table tr.border-top td {
+  border-top: 2px solid #ddd !important;
+}
+
+
+
+ /* chairman */
+.chairmanmsg{
+  box-shadow: 2px 0px 4px 2px rgba(128, 128, 128, 0.412);
+  padding: 1rem 2rem;
+  text-align: justify;
+  font-size: 14px;
+  background-color: #fffbe8;
+}
+.chairmanmsg h2, .chairmanmsg h4{
+  color: rgb(16, 117, 60);
+}
+ .chairmanmsg h5{
+  color: rgb(252, 176, 63);
+ }
+.cdiv{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cdiv img{
+height: 70%;
+width: 70%;
+border-radius: 20px;
+box-shadow: 0px 4px 16px grey;
+}
+.cdiv2{
+position: absolute; 
+height: 100%;
+width: 100%;
+background-color: rgb(252, 176, 63);
+border-radius: 50%;
+top: 0;
+right: 0;
+z-index: -1;
+transform: translateX(50%) rotate(-15deg) scale(1.25);
+}
+.cdiv3{
+position: absolute; 
+height: 200px;
+width: 200px;
+background-color: rgb(252, 176, 63);
+border-radius: 50%;
+bottom: 0;
+left: 0;
+z-index: -1;
+transform: translateY(50%);
+}

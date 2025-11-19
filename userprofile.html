@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | MAAB VALLEY FOUNDATION</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        *{margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif;}
+
+        body{
+            background:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            min-height:100vh;
+            padding:20px;
+        }
+
+        .profile-container{
+            width:100%;
+            max-width:950px;
+            border-radius:25px;
+            background:#fffbe8;
+            overflow:hidden;
+            border:2px solid rgb(16,117,60);
+            box-shadow:0px 12px 35px rgba(0,0,0,0.15), 0px 0px 18px rgba(16,117,60,0.35);
+            padding:40px;
+        }
+
+        @media (max-width:425px) {
+            .profile-container{
+padding: 16px;
+            }
+        }
+        .profile-header{
+            display:flex;
+            gap:25px;
+            align-items:center;
+        }
+
+        .profile-header img{
+            width:110px;
+            height:110px;
+            border-radius:50%;
+            object-fit:cover;
+            border:3px solid rgb(16,117,60);
+            background:white;
+        }
+
+        .profile-header h2{
+            font-size:26px;
+            font-weight:600;
+            color:rgb(16,117,60);
+        }
+
+        .profile-header p{
+            font-size:14px;
+            color:#444;
+            margin:2px 0;
+        }
+
+        .section-title{
+            margin-top:35px;
+            margin-bottom:12px;
+            font-size:20px;
+            font-weight:600;
+            color:rgb(16,117,60);
+        }
+
+        .info-box, .service-box{
+            background:white;
+            border-radius:20px;
+            border:1px solid rgb(16,117,60);
+            padding:20px;
+            margin-bottom:18px;
+        }
+
+        .info-row{
+            display:flex;
+            justify-content:space-between;
+            margin-bottom:12px;
+        }
+
+        .info-row p{
+            margin:0;
+            font-size:15px;
+        }
+
+        .service-title{
+            font-size:16px;
+            font-weight:500;
+            color:#222;
+        }
+
+        .service-date{
+            font-size:13px;
+            color:#555;
+            margin-top:4px;
+        }
+
+        .status{
+            margin-top:8px;
+            display:inline-block;
+            padding:4px 12px;
+            border-radius:15px;
+            font-size:12px;
+            color:white;
+        }
+
+        .in-progress{ background:rgb(16,117,60); }
+        .completed{ background:gray; }
+
+        @media(max-width:768px){
+            .profile-header{flex-direction:column; text-align:center;}
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="profile-container">
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <!-- <img src="https://via.placeholder.com/120" alt="User"> -->
+        <div>
+            <h2>Saloni Bansal</h2>
+            <p>Email: salonibansal@gmail.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </div>
+
+    <!-- Personal Info -->
+    <div class="section-title">Personal Information</div>
+    <div class="info-box">
+        <div class="info-row">
+            <p><b>Name:</b></p>
+            <p>Saloni Bansal</p>
+        </div>
+
+        <div class="info-row">
+            <p><b>Address:</b></p>
+            <p>Lucknow,
+                <br>
+                Uttar Pradesh</p>
+        </div>
+
+        <div class="info-row">
+            <p><b>Joined:</b></p>
+            <p>12 Aug 2024</p>
+        </div>
+    </div>
+
+    <!-- Current Services -->
+    <div class="section-title">Current Services</div>
+
+    <div class="service-box">
+        <p class="service-title">Organic & Sustainable Farming Solutions</p>
+        <p class="service-date">Start Date: 05 Feb 2025</p>
+        <span class="status in-progress">In Progress</span>
+    </div>
+
+    <div class="service-box">
+        <p class="service-title">Soil Health Testing & Improvement</p>
+        <p class="service-date">Start Date: 02 Feb 2025</p>
+        <span class="status in-progress">In Progress</span>
+    </div>
+
+    <!-- Past Services -->
+    <div class="section-title">Past Services</div>
+
+    <div class="service-box">
+        <p class="service-title">Hydroponics Consultation</p>
+        <p class="service-date">Completed On: 10 Jan 2025</p>
+        <span class="status completed">Completed</span>
+    </div>
+
+    <div class="service-box">
+        <p class="service-title">Organic Crop Planning</p>
+        <p class="service-date">Completed On: 22 Dec 2024</p>
+        <span class="status completed">Completed</span>
+    </div>
+
+</div>
+
+</body>
+</html>
