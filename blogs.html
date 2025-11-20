@@ -142,7 +142,8 @@
                     <div class="blogtext p-3 pb-5">
                         <p><i class="bi bi-person-fill"></i> Sumit Dixit</p>
                         <h4>Why Agriculture and Eco is For The Envoirment</h4>
-                         <a href="" class="buttondesign"><span>Learn More</span></a>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam, deserunt ea incidunt delectus cum alias hic. Eius ullam maiores dolor facere delectus reprehenderit minus aliquam, nemo maxime nostrum laudantium exercitationem dolorum dolore ipsum totam? Libero optio in doloremque dolor, ab qui est, suscipit reprehenderit asperiores enim eos perspiciatis distinctio.</p>
+                         <a href="#" class="buttondesign"><span>Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -154,7 +155,8 @@
                     <div class="blogtext p-3 pb-5">
                         <p><i class="bi bi-person-fill"></i> Sumit Dixit</p>
                         <h4>Why Agriculture and Eco is For The Envoirment</h4>
-                         <a href="" class="buttondesign"><span>Learn More</span></a>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam, deserunt ea incidunt delectus cum alias hic. Eius ullam maiores dolor facere delectus reprehenderit minus aliquam, nemo maxime nostrum laudantium exercitationem dolorum dolore ipsum totam? Libero optio in doloremque dolor, ab qui est, suscipit reprehenderit asperiores enim eos perspiciatis distinctio.</p>
+                         <a href="#" class="buttondesign"><span>Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -166,7 +168,8 @@
                     <div class="blogtext p-3 pb-5">
                         <p><i class="bi bi-person-fill"></i> Sumit Dixit</p>
                         <h4>Why Agriculture and Eco is For The Envoirment</h4>
-                         <a href="" class="buttondesign"><span>Learn More</span></a>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam, deserunt ea incidunt delectus cum alias hic. Eius ullam maiores dolor facere delectus reprehenderit minus aliquam, nemo maxime nostrum laudantium exercitationem dolorum dolore ipsum totam? Libero optio in doloremque dolor, ab qui est, suscipit reprehenderit asperiores enim eos perspiciatis distinctio.</p>
+                         <a href="#" class="buttondesign"><span>Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -178,7 +181,8 @@
                     <div class="blogtext p-3 pb-5">
                         <p><i class="bi bi-person-fill"></i> Sumit Dixit</p>
                         <h4>Why Agriculture and Eco is For The Envoirment</h4>
-                         <a href="" class="buttondesign"><span>Learn More</span></a>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam, deserunt ea incidunt delectus cum alias hic. Eius ullam maiores dolor facere delectus reprehenderit minus aliquam, nemo maxime nostrum laudantium exercitationem dolorum dolore ipsum totam? Libero optio in doloremque dolor, ab qui est, suscipit reprehenderit asperiores enim eos perspiciatis distinctio.</p>
+                         <a href="#" class="buttondesign"><span>Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -190,7 +194,8 @@
                     <div class="blogtext p-3 pb-5">
                         <p><i class="bi bi-person-fill"></i> Sumit Dixit</p>
                         <h4>Why Agriculture and Eco is For The Envoirment</h4>
-                         <a href="" class="buttondesign"><span>Learn More</span></a>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam, deserunt ea incidunt delectus cum alias hic. Eius ullam maiores dolor facere delectus reprehenderit minus aliquam, nemo maxime nostrum laudantium exercitationem dolorum dolore ipsum totam? Libero optio in doloremque dolor, ab qui est, suscipit reprehenderit asperiores enim eos perspiciatis distinctio.</p>
+                         <a href="#" class="buttondesign"><span>Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -202,7 +207,8 @@
                     <div class="blogtext p-3 pb-5">
                         <p><i class="bi bi-person-fill"></i> Sumit Dixit</p>
                         <h4>Why Agriculture and Eco is For The Envoirment</h4>
-                         <a href="" class="buttondesign"><span>Learn More</span></a>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam, deserunt ea incidunt delectus cum alias hic. Eius ullam maiores dolor facere delectus reprehenderit minus aliquam, nemo maxime nostrum laudantium exercitationem dolorum dolore ipsum totam? Libero optio in doloremque dolor, ab qui est, suscipit reprehenderit asperiores enim eos perspiciatis distinctio.</p>
+                         <a href="#" class="buttondesign"><span>Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -273,6 +279,21 @@
 
     <script type="text/javascript">
         AOS.init();
+
+        document.querySelectorAll(".buttondesign").forEach(btn=>{
+btn.addEventListener("click",(e)=>{
+e.preventDefault()
+ let paragraph = btn.closest(".blogtext").querySelector(".paragraph");
+
+    paragraph.classList.toggle("expanded");
+    if (paragraph.classList.contains("expanded")) {
+      btn.querySelector("span").innerText = "Read Less";
+    } else {
+      btn.querySelector("span").innerText = "Learn More";
+    }
+})
+
+        })
     </script>
 </body>
 </html>
