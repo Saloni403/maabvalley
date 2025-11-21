@@ -269,7 +269,7 @@ background-color: rgb(252, 176, 63);
 .sublist li:hover a{
 color: #fff !important;
 }
-@media (max-width:992px) {
+@media (max-width:1200px) {
 header{
    transform: translate(-50%, 1rem);
 }
@@ -992,37 +992,6 @@ border: 5px solid #fff;
 
 
 /* our team */
-/* .myteamdivframe{
-perspective: 1000px;
-}
-
-.myteamdiv{
-  position: relative;
-  transition:transform 1s;
-  transform-style: preserve-3d;
-  width: 100%;
-  height: 100%;
-}
-.backdiv{
-   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-backface-visibility: hidden;
-  background-color: rgb(16, 117, 60);
-  color: #fff;
-  padding: 2rem;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-flex-direction: column;
-}
-
-.myteamdivframe:hover .myteamdiv{
-transform: rotate3d(0,1,0,180deg);
-} */
-
 .myteamdivframe {
   perspective: 1000px;
   width: 100%;           /* change as needed */
@@ -1045,7 +1014,7 @@ transform: rotate3d(0,1,0,180deg);
   left: 0;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
 }
 
 /* Front side (Image) */
@@ -1059,16 +1028,17 @@ transform: rotate3d(0,1,0,180deg);
 
 /* Back side (Content) */
 .backdiv {
-  background-color: rgb(16, 117, 60);
+  background-color: rgba(16, 117, 60, 0.608);
   color: #fff;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
   transform: rotateY(180deg);
   border-radius: 10px;
   overflow-y: scroll;
+  backdrop-filter: blur(10px);
+  backface-visibility: hidden;
 }
 
 /* Flip Effect */
